@@ -1,0 +1,19 @@
+.switchWrapper {
+  position: relative;
+  @keyframes pageAnimation {
+    from {
+      top: 200px;
+    }
+
+    to {
+      top: 0;
+    }
+  }
+  > :first-child ~ * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: pageAnimation ease-out 0.7s;
+  }
+}
