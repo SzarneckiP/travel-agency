@@ -16,6 +16,7 @@ export const CHANGE_TAG_ADD = createActionName('CHANGE_TAG_ADD');
 export const CHANGE_TAG_REMOVE = createActionName('CHANGE_TAG_REMOVE');
 export const CHANGE_DURATION_FROM = createActionName('CHANGE_DURATION_FROM');
 export const CHANGE_DURATION_TO = createActionName('CHANGE_DURATION_TO');
+export const CHANGE_DURATION = createActionName('CHANGE_DURATION');
 // action creators
 
 export const changeSearchPhrase = payload => ({ payload, type: CHANGE_PHRASE });
@@ -25,6 +26,7 @@ export const changeTagsAdd = payload => ({ payload, type: CHANGE_TAG_ADD });
 export const changeTagsRemove = payload => ({ payload, type: CHANGE_TAG_REMOVE });
 export const changeDurationFrom = payload => ({ payload, type: CHANGE_DURATION_FROM });
 export const changeDurationTo = payload => ({ payload, type: CHANGE_DURATION_TO });
+export const changeDuration = payload => ({ payload, type: CHANGE_DURATION });
 
 // reducer
 export default function reducer(statePart = [], action = {}) {

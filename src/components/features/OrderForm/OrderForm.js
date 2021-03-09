@@ -5,7 +5,7 @@ import { Row, Col } from 'react-flexbox-grid';
 import OrderSummary from '../OrderSummary/OrderSummary';
 
 
-const OrderForm = (tripCost, options) => (
+const OrderForm = ({ tripCost, options }) => (
 
   <Row>
     <Col xs={12}>
