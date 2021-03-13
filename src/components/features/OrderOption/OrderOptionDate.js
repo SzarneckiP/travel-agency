@@ -1,6 +1,6 @@
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { node, string } from 'prop-types';
 import styles from './OrderOption.scss';
 import DatePicker from 'react-datepicker';
 
@@ -15,7 +15,7 @@ const OrderOptionDate = ({ currentValue, setOptionValue, name }) => (
 );
 
 OrderOptionDate.propTypes = {
-  currentValue: PropTypes.node,
+  currentValue: PropTypes.oneOfType(string, node),
   name: PropTypes.string,
   setOptionValue: PropTypes.func,
 };

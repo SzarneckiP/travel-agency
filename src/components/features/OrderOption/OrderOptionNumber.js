@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { number, string } from 'prop-types';
 import styles from './OrderOption.scss';
 
 import { formatPrice } from '../../../utils/formatPrice';
@@ -12,7 +12,7 @@ const OrderOptionNumber = ({ currentValue, limits, setOptionValue, price }) => (
   </div>
 );
 OrderOptionNumber.propTypes = {
-  currentValue: PropTypes.number,
+  currentValue: PropTypes.oneOfType(string, number),
   limits: PropTypes.object,
   setOptionValue: PropTypes.func,
   price: PropTypes.string,
