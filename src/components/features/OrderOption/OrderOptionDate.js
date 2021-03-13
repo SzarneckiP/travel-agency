@@ -6,7 +6,7 @@ import DatePicker from 'react-datepicker';
 
 
 
-const OrderOptionData = ({ currentValue, setOptionValue, name }) => (
+const OrderOptionDate = ({ currentValue, setOptionValue, name }) => (
 
   <div className={styles.component}>
     <DatePicker className={styles.input} type='data' selected={currentValue} name={name} placeholderText={'Select a date'} onChange={date => setOptionValue(date)} />
@@ -14,11 +14,11 @@ const OrderOptionData = ({ currentValue, setOptionValue, name }) => (
 
 );
 
-OrderOptionData.propTypes = {
+OrderOptionDate.propTypes = {
   currentValue: PropTypes.node,
   name: PropTypes.string,
   setOptionValue: PropTypes.func,
 };
 
 
-export default OrderOptionData;
+export default OrderOptionDate;
